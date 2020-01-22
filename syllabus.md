@@ -16,7 +16,7 @@ Office Hours: M 1-3pm, T 2-3pm, W 11am-12pm, R 8:30-9:30am, or by appointment
  Section  | Days     |  Time       | Room    | Final Exam
  -------- | -------- |  ---------- | ------- | ----------
 101       | Tue/Thur | 11:00-12:15 | KEC 123 | Tue, May 12, 10:15-12:15
-102       | Tue/Thur | 12:30-1:45  | KEC 123 | Thur, May 14, 10:15-12:15
+102       | Tue/Thur | 12:30-1:45  | KEC 119 | Thur, May 14, 10:15-12:15
 
 Course Description
 ------------------
