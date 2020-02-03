@@ -28,6 +28,7 @@ Welcome to the website for CS 201, Fundamentals of Computer Science II, at York 
 
 * **Jan 23** &mdash; Welcome back!
 * **Feb 5** &mdash; [Assignment 1](assign/assign01.html) is due.
+* **Feb 12** &mdash; [Assignment 2](assign/assign02.html) is due.
 
 <!-- commented out future news
 * **Dec 6** &mdash; [Assignment 6](assign/assign06.html) is now due Monday, Dec 9th by 7:00am.  Because of the due date extension, there is no longer a late grace period for this assignment.  The assignment will receive no credit if submitted after the new due date/time.
