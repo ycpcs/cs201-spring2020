@@ -123,13 +123,14 @@ Here's the fixed version
 public static String readFirstLine(String fileName) throws IOException {
     FileReader fr = new FileReader(fileName);
     BufferedReader br = new BufferedReader(fr);
-
+	String firstLine;
+	
     try {
-        String firstLine = br.readLine();
-        return firstLine;
+        firstLine = br.readLine();
     } finally {
         br.close();
     }
+    return firstLine;
 }
 {% endhighlight %}
 
