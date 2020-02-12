@@ -11,6 +11,7 @@ Assignments are due by 11:59 PM on the due date, although I will **NOT** assess 
 > ---------- | ---- | ---
 > [Assignment 1: Tic Tac Toe](assign01.html) | [CS201\_Assign01.zip](CS201_Assign01.zip) | Wed, Feb 5th
 > [Assignment 2: Disk class](assign02.html) | [CS201\_Assign02.zip](CS201_Assign02.zip) | Wed, Feb 12th
+> [Assignment 3: Disks Game](assign03.html) | n/a | Tues, Feb 25th
 
 
 
