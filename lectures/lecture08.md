@@ -5,6 +5,8 @@ title: "Lecture 8: Inheritance (continued)"
 
 Note: The [course notes on objects, arrays, and references](../notes/objectsArraysReferences.html) will be useful.
 
+[Here](images/CS201_lecture7_inheritance.pdf) is the sample code with explanatory annotations.
+
 Inheritance of fields and methods
 =================================
 
