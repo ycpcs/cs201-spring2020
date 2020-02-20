@@ -86,7 +86,7 @@ private static final double DELTA = 0.00001;
 private Trip exampleTrip;
 private Car myCar;
 
-protected void setUp() {
+public void setUp() {
   exampleTrip = new Trip(3);
   exampleTrip.setHop(0, Terrain.AIRPORT);
   exampleTrip.setHop(1, Terrain.ROAD);
