@@ -295,7 +295,23 @@ function printLabs(opts) {
             document.write("<td></td>");
         } else {
             document.write("<td>" + getLabString(calendar[i].lab, calendar[i].date) + "</td>");
-            document.write("<td>" + getFileString(calendar[i].lab.file) + "</td>");
+            document.write("<td>");
+            if (!calendar[i].lab.file1) {
+            	document.write("n/a");
+            }
+            if (calendar[i].lab.file1) {
+            	document.write(getFileString(calendar[i].lab.file1));
+            } 
+            if (calendar[i].lab.file2) {
+            	document.write("<br>");
+            	document.write(getFileString(calendar[i].lab.file2));
+            }
+            if (calendar[i].lab.file3) {
+            	document.write("<br>");
+             	document.write(getFileString(calendar[i].lab.file3));
+           	}
+           	
+            document.write("</td>");
         }
         document.write("</tr>");
     }

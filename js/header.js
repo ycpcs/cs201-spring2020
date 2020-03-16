@@ -56,28 +56,28 @@ function FinalExamDay(section, date) {
 // Create objects for Labs and Assignments with
 // the following functions.
 ////////////////////////////////////////////////////
-function Lab(title, link) {
-    this.title = title;
-    this.link = link;
+function Lab(title1, link1) {
+    this.title1 = title1;
+    this.link1 = link1;
 }
 
 // Useful for a numbered lab with a filename following the standard naming
 // convention, e.g., "lab04.html", "CS201_Lab04.zip".  The lab description
 // page and the file are assumed to be in the same directory as the
 // document with the lab table.
-function NumberedLab(number, title) {
-    this.title = "Lab " + number + ": " + title;
-    var numstr = (number < 10 ? "0" : "") + number;
-    this.link = "lab" + numstr + ".html";
+function NumberedLab(number1, title1) {
+    this.title1 = "Lab " + number1 + ": " + title1;
+    var numstr1 = (number1 < 10 ? "0" : "") + number1;
+    this.link1 = "lab" + numstr1 + ".html";
     var shortCourse = courseInfo.courseName.replace(/:.*$/, '').replace(/ /, '');
-    this.file = shortCourse + "_Lab" + numstr + ".zip";
+    this.file1 = shortCourse + "_Lab" + numstr1 + ".zip";
 }
 
 // Variation of NumberedLab for labs without a file
-function NumberedLabNoFile(number, title) {
-    this.title = "Lab " + number + ": " + title;
-    var numstr = (number < 10 ? "0" : "") + number;
-    this.link = "lab" + numstr + ".html";
+function NumberedLabNoFile(number1, title1) {
+    this.title1 = "Lab " + number1 + ": " + title1;
+    var numstr1 = (number1 < 10 ? "0" : "") + number1;
+    this.link1 = "lab" + numstr1 + ".html";
 }
 
 function DoubleNumberedLab(number1, title1, number2, title2) {
