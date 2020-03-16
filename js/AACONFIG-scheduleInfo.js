@@ -63,6 +63,10 @@ courseInfo.classPeriods = [
 		lab: new NumberedLab(12, "Benchmarking ArrayList")
 	},
 	{
+		topic: new Topic("AWS Setup", ""),
+		reading: "Canvas videos",
+	},
+	{
 		topic: new Topic("Lecture 13: Big-O", "lectures/lecture13.html"),
 		reading: "5.4&ndash;5.8",
 		lab: new NumberedLabNoFile(13, "Big-O")
@@ -123,12 +127,8 @@ courseInfo.classPeriods = [
 		lab: new Lab("No lab", "")
 	},
 	{
-		topic: new Topic("Lecture 24: Relational Databases and SQL", "lectures/lecture24.html"),
-		lab: new NumberedLab(23, "Relational Databases and SQL")
-	},
-	{
-		topic: new Topic("Lecture 25: Database Applications and JDBC", "lectures/lecture25.html"),
-		lab: new NumberedLab(24, "JDBC")
+		topic: new DoubleTopic("Lecture 24: Relational Databases and SQL", "lectures/lecture24.html", "Lecture 25: Database Applications and JDBC", "lectures/lecture25.html"),
+		lab: new DoubleNumberedLab(23, "Relational Databases and SQL", 24, "JDBC")
 	},
 ];
 

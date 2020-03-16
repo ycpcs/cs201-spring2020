@@ -3,9 +3,15 @@ layout: default
 title: "Assignment 4: Klondike"
 ---
 
+**Milestone 1 - Updated** Monday, Mar 23rd by 11:59 PM
+
+**Milestone 2 - Updated** Wednesday, Apr 1st by 11:59 PM
+
+<!--
 **Milestone 1** Thursday, Mar 19th by 11:59 PM
 
 **Milestone 2** Monday, Mar 30th by 11:59 PM
+-->
 
 # Getting Started
 
