@@ -65,6 +65,7 @@ courseInfo.classPeriods = [
 	{
 		topic: new Topic("AWS Setup", ""),
 		reading: "Canvas videos",
+		lab: new NumberedLabGradle(7, "Inheritance AWS Test")
 	},
 	{
 		topic: new Topic("Lecture 13: Big-O", "lectures/lecture13.html"),
