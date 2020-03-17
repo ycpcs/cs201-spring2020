@@ -78,7 +78,7 @@ function NumberedLabGradle(number1, title1) {
     var numstr1 = (number1 < 10 ? "0" : "") + number1;
     this.link1 = "lab" + numstr1 + ".html";
     var shortCourse = courseInfo.courseName.replace(/:.*$/, '').replace(/ /, '');
-    this.file1 = "gradle_src/" + shortCourse + "_Lab_Gradle" + numstr1 + ".zip";
+    this.file1 = "gradle_src/" + shortCourse + "_Lab" + numstr1 + "_Gradle.zip";
 }
 
 // Variation of NumberedLab for labs without a file
