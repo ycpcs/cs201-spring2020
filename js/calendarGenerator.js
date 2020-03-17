@@ -172,6 +172,7 @@ function isLab(lab) {
     return (lab instanceof Lab)
         || (lab instanceof NumberedLab)
         || (lab instanceof NumberedLabNoFile)
+        || (lab instanceof NumberedLabGradle)
         || (lab instanceof DoubleNumberedLab)
         || (lab instanceof TripleNumberedLab);
 }
@@ -189,6 +190,8 @@ function getLabString(lab, assignOnDate) {
     	}else if (lab instanceof NumberedLabNoFile) {
     		str = linkify(lab.title1, lab.link1);
     	} else if (lab instanceof NumberedLab) {
+        	str = linkify(lab.title1, lab.link1);
+    	} else if (lab instanceof NumberedLabGradle) {
         	str = linkify(lab.title1, lab.link1);
     	} else if (lab instanceof DoubleNumberedLab) {
         	str = linkify(lab.title1, lab.link1);
