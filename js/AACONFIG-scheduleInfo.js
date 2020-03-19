@@ -75,12 +75,12 @@ courseInfo.classPeriods = [
 	{
 		topic: new Topic("Lecture 14: Collections, Iterators", "lectures/lecture14.html"),
 		reading: "6.1-6.3",
-		lab: new NumberedLab(14, "Iterators, Interleaving")
+		lab: new NumberedLabGradle(14, "Iterators, Interleaving")
 	},
 	{
 		topic: new Topic("Lecture 15: Generic Algorithms", "lectures/lecture15.html"),
 		reading: "6.4",
-		lab: new NumberedLab(15, "Generic Algorithms")
+		lab: new NumberedLabGradle(15, "Generic Algorithms")
 	},
 	{
 		topic: new Topic("Lecture 16: Lists", "lectures/lecture16.html"),

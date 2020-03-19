@@ -6,7 +6,12 @@ title: "Lab 14: Iterators, Interleaving"
 Getting started
 ===============
 
-Download [CS201\_Lab14.zip](CS201_Lab14.zip). Import it into Eclipse (**File&rarr;Import...&rarr;Existing Projects into Workspace&rarr;Archive File**.) You should see a project called **CS201\_Lab14** in the package explorer.
+Download [CS201\_Lab14\_Gradle.zip](gradle_src/CS201_Lab14_Gradle.zip) (or [CS201\_Lab14.zip](CS201_Lab14.zip). Extract the zip file and import it into Cloud9 (or Eclipse (**File&rarr;Import...&rarr;Gradle&rarr;Existing Gradle Project**.) You should see a project called **CS201\_Lab14\_Gradle** in the package explorer.
+
+In the terminal window at the bottom of the Cloud9 IDE
+
+    cd ~
+    cd environment/CS201\_Lab14\_Gradle
 
 Your Task
 =========
@@ -20,11 +25,26 @@ Each method is accompanied by a detailed documentation comment describing how th
 
 The **AlgorithmTest** JUnit test class has unit tests for each method. Take a look at the tests if you are not sure about how the method is intended to work.
 
+Running Test Cases
+==================
+
+From the terminal window at the bottom of the Cloud9 IDE, 
+
+    gradle build
+
 Submitting
 ==========
 
-When you are done, submit the lab to the Marmoset server using either of the methods below.
+When you are done, submit the lab to the Marmoset server using
 
+    make submit
+    
+If you receive a permission denied error, type
+
+    chmod 755 submitToMarmoset.pl
+    make submit
+    
+<!--
 From Eclipse
 ------------
 
@@ -40,3 +60,4 @@ Save the project (**CS201\_Lab14**) to a zip file by right-clicking it and choos
 Upload the saved zip file to the Marmoset server as **lab14**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>
+-->
