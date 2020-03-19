@@ -6,7 +6,16 @@ title: "Lab 16: List Reversal"
 Getting Started
 ===============
 
+Download [CS201\_Lab16\_Gradle.zip](gradle_src/CS201_Lab16_Gradle.zip) (or [CS201\_Lab16.zip](CS201_Lab16.zip)). Extract the zip file and import it into Cloud9 (or Eclipse **File&rarr;Import...&rarr;Gradle&rarr;Existing Gradle Project**.) You should see a project called **CS201\_Lab16\_Gradle** in the package explorer.
+
+In the terminal window at the bottom of the Cloud9 IDE
+
+    cd ~
+    cd environment/CS201_Lab16_Gradle
+
+<!--
 Download [CS201\_Lab16.zip](CS201_Lab16.zip). Import it into Eclipse (**File&rarr;Import...&rarr;Existing Projects into Workspace&rarr;Archive File**.) You should see a project called **CS201\_Lab16** in the package explorer.
+-->
 
 Your Task
 =========
@@ -52,6 +61,26 @@ Once you have collected your data, plot it in Excel. Your plot should look somet
 
 Copy your Excel file into the Eclipse project. (Put it in the subdirectory of your Eclipse workspace called **CS201\_Lab16**, and in Eclipse right-click on the project and choose **Refresh**.)
 
+Running the Program
+===================
+
+From the terminal window at the bottom of the Cloud9 IDE, 
+
+    gradle run
+
+Submitting
+==========
+
+When you are done, submit the lab to the Marmoset server using
+
+    make submit
+    
+If you receive a permission denied error, type
+
+    chmod 755 submitToMarmoset.pl
+    make submit
+
+<!--
 Submitting
 ==========
 
@@ -74,3 +103,4 @@ Save the project (**CS201\_Lab16**) to a zip file by right-clicking it and choos
 Upload the saved zip file to the Marmoset server as **lab16**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>
+-->

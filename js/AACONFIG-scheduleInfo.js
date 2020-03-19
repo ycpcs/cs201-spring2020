@@ -85,19 +85,19 @@ courseInfo.classPeriods = [
 	{
 		topic: new Topic("Lecture 16: Lists", "lectures/lecture16.html"),
 		reading: "6.5",
-		lab: new NumberedLab(16, "List Reversal")
+		lab: new NumberedLabGradle(16, "List Reversal")
 	},
 	{
 		topic: new Topic("** Exam 2", "")
 	},
 	{
 		topic: new Topic("Lecture 17: Parallel Programming with Threads", "lectures/lecture17.html"),
-		lab: new NumberedLab(17, "Parallel Estimation of π")
+		lab: new NumberedLabGradle(17, "Parallel Estimation of π")
 	},
 	{
 		topic: new Topic("Lecture 18: Stacks and Queues", "lectures/lecture18.html"),
 		reading: "6.6",
-		lab: new NumberedLab(18, "Palindromes")
+		lab: new NumberedLabGradle(18, "Palindromes")
 	},
 	{
 		topic: new Topic("Lecture 19: Sets and Maps", "lectures/lecture19.html"),

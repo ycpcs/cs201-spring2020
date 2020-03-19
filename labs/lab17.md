@@ -6,7 +6,16 @@ title: "Lab 17: Parallel Estimation of π"
 Getting Started
 ===============
 
+Download [CS201\_Lab17\_Gradle.zip](gradle_src/CS201_Lab17_Gradle.zip) (or [CS201\_Lab17.zip](CS201_Lab17.zip)). Extract the zip file and import it into Cloud9 (or Eclipse **File&rarr;Import...&rarr;Gradle&rarr;Existing Gradle Project**.) You should see a project called **CS201\_Lab17\_Gradle** in the package explorer.
+
+In the terminal window at the bottom of the Cloud9 IDE
+
+    cd ~
+    cd environment/CS201_Lab17_Gradle
+
+<!--
 Download [CS201\_Lab17.zip](CS201_Lab17.zip). Import it into Eclipse (**File&rarr;Import...&rarr;Existing Projects into Workspace&rarr;Archive File**.) You should see a project called **CS201\_Lab17** in the package explorer.
+-->
 
 Estimating π
 ============
@@ -46,6 +55,26 @@ In the sequential computation, create one **PiTask** object and have it compute 
 
 In the parallel computation, create two **PiTask** objects and have each compute 50,000,000 points. The total number of points that fell within the circle will thus be the sum of the counts computed by each of the two tasks.
 
+Running the Program
+===================
+
+From the terminal window at the bottom of the Cloud9 IDE, 
+
+    gradle run
+
+Submitting
+==========
+
+When you are done, submit the lab to the Marmoset server using
+
+    make submit
+    
+If you receive a permission denied error, type
+
+    chmod 755 submitToMarmoset.pl
+    make submit
+
+<!--
 Submitting
 ==========
 
@@ -66,3 +95,4 @@ Save the project (**CS201\_Lab17**) to a zip file by right-clicking it and choos
 Upload the saved zip file to the Marmoset server as **lab17**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>
+-->
