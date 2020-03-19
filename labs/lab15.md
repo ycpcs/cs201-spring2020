@@ -6,12 +6,12 @@ title: "Lab 15: Generic Algorithms"
 Getting Started
 ===============
 
-Download [CS201\_Lab14\_Gradle.zip](gradle_src/CS201_Lab14_Gradle.zip) (or [CS201\_Lab14.zip](CS201_Lab14.zip). Extract the zip file and import it into Cloud9 (or Eclipse (**File&rarr;Import...&rarr;Gradle&rarr;Existing Gradle Project**.) You should see a project called **CS201\_Lab14\_Gradle** in the package explorer.
+Download [CS201\_Lab14\_Gradle.zip](gradle_src/CS201_Lab14_Gradle.zip) (or [CS201\_Lab14.zip](CS201_Lab14.zip)). Extract the zip file and import it into Cloud9 (or Eclipse **File&rarr;Import...&rarr;Gradle&rarr;Existing Gradle Project**.) You should see a project called **CS201\_Lab15\_Gradle** in the package explorer.
 
 In the terminal window at the bottom of the Cloud9 IDE
 
     cd ~
-    cd environment/CS201\_Lab14\_Gradle
+    cd environment/CS201_Lab15_Gradle
 
 <!--
 Download [CS201\_Lab15.zip](CS201_Lab15.zip). Import it into Eclipse (**File&rarr;Import...&rarr;Existing Projects into Workspace&rarr;Archive File**.) You should see a project called **CS201\_Lab15** in the package explorer.
