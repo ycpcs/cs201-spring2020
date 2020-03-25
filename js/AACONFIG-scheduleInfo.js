@@ -83,12 +83,12 @@ courseInfo.classPeriods = [
 		lab: new NumberedLabGradle(15, "Generic Algorithms")
 	},
 	{
+		topic: new Topic("** Exam 2", "")
+	},
+	{
 		topic: new Topic("Lecture 16: Lists", "lectures/lecture16.html"),
 		reading: "6.5",
 		lab: new NumberedLabGradle(16, "List Reversal")
-	},
-	{
-		topic: new Topic("** Exam 2", "")
 	},
 	{
 		topic: new Topic("Lecture 17: Parallel Programming with Threads", "lectures/lecture17.html"),
