@@ -127,7 +127,7 @@ public class MyStack<E> implements Stack<E> {
     }
     
     public void push(E element) {
-        list.append(element);
+        list.add(element);
     }
     
     public E pop() {
@@ -190,7 +190,7 @@ public class MyQueue<E> implements Queue<E> {
     }
     
     public void add(E element) {
-        list.addFirst(element);
+        list.add(element);
     }
     
     public E remove() {
