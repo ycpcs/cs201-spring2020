@@ -96,20 +96,20 @@ Observation:
 > Operation | ArrayList | LinkedList
 > --------- | --------- | ----------
 > size | O(1) | O(1)
-> append | O(1) | O(1)
-> prepend | O(N) | O(1)
-> getLast | O(1) | O(1)
-> getFirst | O(1) | O(1)
-> removeLast | O(1) | O(N)/O(1)
-> removeFirst | O(N) | O(1)
+> add (first) | O(N) | O(1)
+> add (last) | O(1) | O(1)
+> get (first) | O(1) | O(1)
+> get (last) | O(1) | O(1)
+> remove (first) | O(N) | O(1)
+> remove (last) | O(1) | O(1)
 
 So, depending on whether the list implementation is array-based or linked-list-based, we can map the stack operations onto list operations as follows:
 
 > Operation | ArrayList | LinkedList
 > --------- | --------- | ----------
-> push | append | prepend
-> pop | removeLast | removeFirst
-> peek | getLast | getFirst
+> push | add (last) | add (first)
+> pop | remove (last) | remove (first)
+> peek | get (last) | get (first)
 > isEmpty | size | size
 
 Example:
@@ -142,7 +142,7 @@ public class MyStack<E> implements Stack<E> {
 }
 {% endhighlight %}
 
-An implementation based on LinkedList would be very similar, except that we'd push to and pop from the beginning (head) of the list, since that's guaranteed to be efficient for both singly- and doubly-linked lists.
+An implementation based on LinkedList would be very similar, except that we'd push to and pop from the beginning (head) of the list, since that's guaranteed to be efficient.
 
 Queues
 ------
@@ -203,7 +203,7 @@ public class MyQueue<E> implements Queue<E> {
 
 Note that each operation is O(1).  [Discuss: why?]
 
-However, there is no way to adapt an array-based list directly and still get O(1) running time for the queue operations.  The problem is that element values must be enqueued (added) and dequeued (removed) at different ends of the list.
+However, there is no way to adapt an array-based list directly and still get O(1) running time for the queue operations.  The problem is that element values must be enqueued (added) and dequeued (removed) at different ends of the list which would require at least one to be O(N) for an array list.
 
 There is a clever way to implement a queue using an array: treat the array as "circular".  Here's a circular array with 10 elements.
 
