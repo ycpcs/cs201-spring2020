@@ -282,7 +282,7 @@ and is assigned to the **iterColorMap** with its respective **iterCount** key.
 
 The RGB color generation graph for the above scheme is shown below:
 
-> <a href="img/assign06/TrigColorGeneration.png"><img style="width: 600px; height: 250px;" src="img/assign06/TrigColorGeneration.png" /></a>
+> <a href="img/assign05/TrigColorGeneration.png"><img style="width: 600px; height: 250px;" src="img/assign05/TrigColorGeneration.png" /></a>
 
 Grading Criteria
 ================
