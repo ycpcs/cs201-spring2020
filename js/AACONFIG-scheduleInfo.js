@@ -120,12 +120,12 @@ courseInfo.classPeriods = [
 		lab: new NumberedLab(22, "Binomial Coefficient")
 	},
 	{
-		topic: new Topic("** Exam 3", "")
-	},
-	{
 		topic: new Topic("Lecture 23: Merge and Quick Sort", "lectures/lecture23.html"),
 		reading: "8.5-8.6",
 		lab: new Lab("No lab", "")
+	},
+	{
+		topic: new Topic("** Exam 3", "")
 	},
 	{
 		topic: new DoubleTopic("Lecture 24: Relational Databases and SQL", "lectures/lecture24.html", "Lecture 25: Database Applications and JDBC", "lectures/lecture25.html"),
