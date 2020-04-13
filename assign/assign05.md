@@ -224,6 +224,66 @@ For example, you might divide the overall region into quadrants or horizontal/ve
 
 **Suggestion**: Create multiple **MandelbrotTask** objects, and execute each one in a separate thread within the **computeIterations()** method in the **Mandelbrot** class.
 
+ColorMappingColorChooser class
+------------------------------
+
+Since the **iterCount** values do not distribute uniformly across all possible values, many of the **iterCount** values tend to bunch up into tight groups.
+
+The **ColorMappingColorChooser** class addresses the issue of the non-uniform distribution of the **iterCount** values by mapping colors to **iterCount** values based on their *frequency* of occurrence, rather than strictly on their value.  The frequency of occurence of each **iterCount** value determines the width of the color spectrum that applies to that **iterCount**.  The spectrum width determines the distance between the colors assigned to the distinct **iterCount** values.
+
+Creating an instance of **ColorMappingColorChooser** requires the creation of three separate maps:
+- **iterCountMap** maps each distinct **iterCount** value to the number of times it occurs in the **iterCounts** array.  This determines the frequency of occurrence and the relative width of the spectrum band (distance between the adjacent **iterCounts**).
+- **iterSpectrumMap** maps each distinct **iterCount** value to the relative location in the color spectrum.  The values in the **iterCountMap** are used to find the locations for each **iterCount** in the color spectrum.  The **iterCounts** are sorted in ascending order and the widths of the prior spectrum bands are summed together to determine the relative location of each **iterCount** in the color spectrum.  Each **iterCount** is then centered within its spectrum band.
+- **iterColorMap** maps each distinct **iterCount** value to its RGB color.  The relative location in the color spectrum for each **iterCount** value is pulled from the **iterSpectrumMap** and is then used inside the trignometric **sine** and **cosine** functions to provide smooth transitions between red, green, and blue.
+
+*Creating the iterCountMap*
+
+The **createIterCountMap()** method accepts a reference to the **iterCounts** array and returns a reference to the **iterCountMap** that it creates from the **iterCounts** array contents.  The **iterCountMap** correlates each distinct **iterCount** with the number of times it occurs in the **iterCounts** array.
+
+The method must iterates through the **iterCounts** array, and it will either encounter a new entry (and initialize the occurrence count for that entry) or update the occurrence count for an existing entry.  When iteration is complete, the method should return a reference to the newly populated map.
+
+*Creating the iterSpectrumMap*
+
+The **createIterSpectrumMap()** method accepts a reference to the **iterCounts** array and returns a reference to the **iterSpectrumMap** that it creates from the **iterCountMap** contents.  The **iterSpectrumMap** correlates each distinct **iterCount** with its location in the color spectrum.  **createIterColorMap** will then assign a distinct color to each **iterCount** based on the contents of **iterSpectrumMap**.
+
+The method must iterate through the keys of the **iterCountMap**, in ascending order, and accumulate the location of each **iterCount** from the beginning of the color spectrum.  The occurrence count for each **iterCountMap** key determines the width of the spectrum band that the **iterCount** occupies.  The sum of the prior occurence counts (widths or spectrum bands) determines the location of the leading edge of the next **iterCount** spectrum band.  Each **iterCount** is then centered in its spectrum band:
+
+       centered location = leading edge location + (width / 2) + 1
+
+The above result is then stored as the value in the **iterSpectrumMap** with its respective **iterCount** key.
+
+At the end of iteration, the width of the entire spectrum (the sum of all the values in the **iterSpectrumMap**) is stored in the class field **maxLocation**.  The method then returns a reference to the newly populated map. 
+
+*Creating the iterColorMap*
+
+The **createIterColorMap()** method accepts a reference to the **iterCounts** array and returns a reference to the **iterColorMap** that it creates from the **iterSpectrumMap** contents.  The **iterColorMap** correlates each distinct iterCount with its corresponding RGB color value.
+
+The method must iterate through the **iterSpectrumMap** to get the spectrum location for each distinct **iterCount**  The spectrum location is then used to determine the red, green, and blue color components for that **iterCount**.  Each **iterCount** key and its respective color value are then stored in the **iterColorMap**.  The **getColor()** method then returns the color associated with each **iterCount** by looking up the color in the **iterColorMap**.
+
+The calculations for the red, green, and blue color components for each **iterCount** use its relative spectrum location:
+
+        relative spectrum location = spectrum location / maxLocation
+		
+combined with the **sine** and **cosine** trig functions to generate smooth transitions between the composite RGB spectrum colors.  The color component calculations are:
+
+```
+red = sin(spectrum location / maxLocation * PI/2) * 255
+
+green = sin(spectrum location / maxLocation * PI) * 255
+
+blue = cos(spectrum location / maxLocation * PI/2) * 255
+```
+
+The color value is then created from:
+
+        color = new Color(red, green, blue)
+		
+and is assigned to the **iterColorMap** with its respective **iterCount** key.  
+
+The RGB color generation graph for the above scheme is shown below:
+
+> <a href="img/assign06/TrigColorGeneration.png"><img style="width: 600px; height: 250px;" src="img/assign06/TrigColorGeneration.png" /></a>
+
 Grading Criteria
 ================
 
