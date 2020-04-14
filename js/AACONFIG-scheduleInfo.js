@@ -107,7 +107,7 @@ courseInfo.classPeriods = [
 	{
 		topic: new Topic("Lecture 20: Recursion", "lectures/lecture20.html"),
 		reading: "7.1, 7.3",
-		lab: new NumberedLab(20, "Recursion")
+		lab: new NumberedLabGradle(20, "Recursion")
 	},
 	{
 		topic: new Topic("Lecture 21: Proof by Induction", "lectures/lecture21.html"),
