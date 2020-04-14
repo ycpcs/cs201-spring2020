@@ -6,7 +6,16 @@ title: "Lab 19: Word Count"
 Getting started
 ===============
 
+Download [CS201\_Lab19\_Gradle.zip](gradle_src/CS201_Lab19_Gradle.zip) (or [CS201\_Lab19.zip](CS201_Lab19.zip)). Extract the zip file and import it into Cloud9 (or Eclipse **File&rarr;Import...&rarr;Gradle&rarr;Existing Gradle Project**.) You should see a project called **CS201\_Lab19\_Gradle** in the package explorer.
+
+In the terminal window at the bottom of the Cloud9 IDE
+
+    cd ~
+    cd environment/CS201_Lab19_Gradle
+
+<!--
 Import [CS201\_Lab19.zip](CS201_Lab19.zip) (**File&rarr;Import...&rarr;General&rarr;Existing Projects into Workspace&rarr;Archive File**). You should see a project called **CS201\_Lab19** in the Package Explorer.
+-->
 
 Your Task
 =========
@@ -53,6 +62,26 @@ You are required to list the words alphabetically when displaying the histogram.
 
 You should determine the length of the longest word so that the "bars" of the histogram will all start in the same column when printed.
 
+Running the Program
+===================
+
+From the terminal window at the bottom of the Cloud9 IDE, 
+
+    gradle run
+
+Submitting
+==========
+
+When you are done, submit the lab to the Marmoset server using
+
+    make submit
+    
+If you receive a permission denied error, type
+
+    chmod 755 submitToMarmoset.pl
+    make submit
+
+<!--
 Submitting
 ==========
 
@@ -73,3 +102,4 @@ Save the project (**CS201\_Lab19**) to a zip file by right-clicking it and choos
 Upload the saved zip file to the Marmoset server as **lab19**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>
+-->

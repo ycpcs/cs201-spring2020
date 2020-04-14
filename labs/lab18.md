@@ -6,7 +6,16 @@ title: "Lab 18: Palindromes"
 Getting started
 ===============
 
+Download [CS201\_Lab18\_Gradle.zip](gradle_src/CS201_Lab18_Gradle.zip) (or [CS201\_Lab18.zip](CS201_Lab18.zip)). Extract the zip file and import it into Cloud9 (or Eclipse **File&rarr;Import...&rarr;Gradle&rarr;Existing Gradle Project**.) You should see a project called **CS201\_Lab18\_Gradle** in the package explorer.
+
+In the terminal window at the bottom of the Cloud9 IDE
+
+    cd ~
+    cd environment/CS201_Lab18_Gradle
+
+<!--
 Import [CS201\_Lab18.zip](CS201_Lab18.zip) (**File&rarr;Import...&rarr;General&rarr;Existing Projects into Workspace&rarr;Archive File**). You should see a project called **CS201\_Lab18** in the Package Explorer.
+-->
 
 Your Task
 =========
@@ -79,6 +88,26 @@ You should also ignore case. One way to do this is by converting all letters to 
 c = Character.toLowerCase(c);
 {% endhighlight %}
 
+Running the Program
+===================
+
+From the terminal window at the bottom of the Cloud9 IDE, 
+
+    gradle run
+
+Submitting
+==========
+
+When you are done, submit the lab to the Marmoset server using
+
+    make submit
+    
+If you receive a permission denied error, type
+
+    chmod 755 submitToMarmoset.pl
+    make submit
+
+<!--
 Running the program
 ===================
 
@@ -106,3 +135,4 @@ Save the project (**CS201\_Lab18**) to a zip file by right-clicking it and choos
 Upload the saved zip file to the Marmoset server as **lab18**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>
+-->

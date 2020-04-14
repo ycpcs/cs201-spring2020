@@ -102,7 +102,7 @@ courseInfo.classPeriods = [
 	{
 		topic: new Topic("Lecture 19: Sets and Maps", "lectures/lecture19.html"),
 		reading: "6.7-6.8",
-		lab: new NumberedLab(19, "Word Count")
+		lab: new NumberedLabGradle(19, "Word Count")
 	},
 	{
 		topic: new Topic("Lecture 20: Recursion", "lectures/lecture20.html"),
