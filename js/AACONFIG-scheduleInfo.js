@@ -117,7 +117,7 @@ courseInfo.classPeriods = [
 	{
 		topic: new Topic("Lecture 22: Memoization and Dynamic Programming", "lectures/lecture22.html"),
 		reading: "7.6",
-		lab: new NumberedLab(22, "Binomial Coefficient")
+		lab: new NumberedLabGradle(22, "Binomial Coefficient")
 	},
 	{
 		topic: new Topic("Lecture 23: Merge and Quick Sort", "lectures/lecture23.html"),

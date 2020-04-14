@@ -17,12 +17,41 @@ The binomial cooefficient C(n,k), often written "n choose k", is the number of w
 Getting Started
 ===============
 
-Import the file [CS201\_Lab22.zip](CS201_Lab22.zip) into your Eclipse workspace. You will implement the **compute** method of the classes **NaiveRecursive** and **Memoization**.
+Download [CS201\_Lab22\_Gradle.zip](gradle_src/CS201_Lab22_Gradle.zip) (or [CS201\_Lab22.zip](CS201_Lab22.zip)). Extract the zip file and import it into Cloud9 (or Eclipse **File&rarr;Import...&rarr;Gradle&rarr;Existing Gradle Project**.) You should see a project called **CS201\_Lab22\_Gradle** in the package explorer.
+
+In the terminal window at the bottom of the Cloud9 IDE
+
+    cd ~
+    cd environment/CS201_Lab22_Gradle
+
+You will implement the **compute** method of the classes **NaiveRecursive** and **Memoization**.
 
 As the names suggest, **NaiveRecursive** should be a literal recursive implementation of the binomial coefficient function, and **Memoization** should implement the binomial coefficient function using memoization to avoid repeatedly solving identical subproblems.
 
 Because the binomial coefficient function takes two parameters, **n** and **k**, you will probably want your memoization table to be a two-dimensional array.
 
+Running the Program
+===================
+
+From the terminal window at the bottom of the Cloud9 IDE, 
+
+    gradle run
+
+The test driver solves C(n,k) for all values of k 0..n, for n=25, and measures the number of milliseconds needed to solve each problem. While the naive recursive implementation will take an appreciable amount of time, the implementation using memoization should execute very quickly.
+
+Submitting
+==========
+
+When you are done, submit the lab to the Marmoset server using
+
+    make submit
+    
+If you receive a permission denied error, type
+
+    chmod 755 submitToMarmoset.pl
+    make submit
+
+<!--
 Testing
 =======
 
@@ -48,3 +77,4 @@ Save the project (**CS201\_Lab22**) to a zip file by right-clicking it and choos
 Upload the saved zip file to the Marmoset server as **lab22**. The server URL is
 
 > <https://cs.ycp.edu/marmoset/>
+-->
