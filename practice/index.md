@@ -13,8 +13,6 @@ This page links to practice exams.
 
 > [Solution (written questions)](cs201-fall2016-exam02-solution.pdf), [Solution (programming questions)](CS201_Exam02_Solution.zip)
 
-<!--
-[Exam 3, Fall 2016](cs201-fall2016-exam03.pdf), [Programming zipfile](CS201_Exam03.zip)
+[Exam 3, Fall 2016](cs201-fall2016-exam03.pdf), [Gradle programming zipfile](CS201_Exam03_Gradle.zip), [Programming zipfile](CS201_Exam03.zip), 
 
-> [Solution (written questions)](cs201-fall2016-exam03-solution.pdf), [Solution (programming questions)](CS201_Exam03_Solution.zip)
--->
+> [Solution (written questions)](cs201-fall2016-exam03-solution.pdf), [Gradle Solution (programming questions)](CS201_Exam03_Solution_Gradle.zip), [Solution (programming questions)](CS201_Exam03_Solution.zip)
