@@ -39,6 +39,8 @@ Welcome to the website for CS 201, Fundamentals of Computer Science II, at York 
 * **Apr 23** &mdash; [Assignment 5 Milestone 1](assign/assign05.html) is due.
 * **May 5** &mdash; [Assignment 5 Milestone 2](assign/assign05.html) is due.
 * **May 5** &mdash; **Exam 3**
+* **TUESDAY May 12 10:15am-12:15pm - FINAL EXAM CS201.101 (11am section)**
+* **THURSDAY May 14 10:15am-12:15pm - FINAL EXAM CS201.102 (12:30pm section)**
 
 <!-- commented out future news
 * **Dec 6** &mdash; [Assignment 6](assign/assign06.html) is now due Monday, Dec 9th by 7:00am.  Because of the due date extension, there is no longer a late grace period for this assignment.  The assignment will receive no credit if submitted after the new due date/time.
