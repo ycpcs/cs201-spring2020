@@ -5,7 +5,7 @@ title: "Assignment 5: Mandelbrot Set Renderer"
 
 **Milestone 1** Thursday, Apr 23rd by 11:59 PM
 
-**Milestone 2** Tuesday, May 5th by 11:59 PM
+**Updated Milestone 2** Thursday, May 7th by 11:59 PM
 
 Getting Started
 ===============
